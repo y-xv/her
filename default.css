@@ -3,21 +3,20 @@ body {
     padding: 0;
     background: #fdc9d1;
     font-size: 12px;
-    overflow: auto;
+    overflow: auto
 }
-
 #mainDiv {
     width: 100%;
     height: 100%
 }
-
 #background-video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  pointer-events: none; /* allow clicks to pass through the video */
+  z-index: -1; /* ensure video is behind the content */
 }
 
 #loveHeart {
@@ -26,35 +25,29 @@ body {
     height: 620px;
     position: relative;
 }
-
 #garden {
     width: 100%;
     height: 100%
 }
-
 #elapseClock {
     text-align: right;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px
 }
-
 #words {
     font-family: "sans-serif";
     width: 500px;
     font-size: 24px;
     color: #666
 }
-
 #messages {
     display: none
 }
-
 #elapseClock .digit {
     font-family: "digit";
     font-size: 36px
 }
-
 #loveu {
     padding: 5px;
     font-size: 22px;
@@ -63,16 +56,13 @@ body {
     text-align: right;
     display: none
 }
-
 #loveu .signature {
     margin-top: 10px;
     font-size: 20px;
 }
-
 #clickSound {
     display: none
 }
-
 #code {
     float: left;
     width: 440px;
@@ -82,30 +72,22 @@ body {
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
     font-size: 12px
 }
-
 #code .string {
     color: #2a36ff
 }
-
 #code .keyword {
     color: #7f0055;
     font-weight: bold
 }
-
 #code .placeholder {
     margin-left: 15px
 }
-
 #code .space {
     margin-left: 7px
 }
-
 #code .comments {
     color: #3f7f5f
 }
-
-
-
 #errorMsg {
     width: 100%;
     text-align: center;
