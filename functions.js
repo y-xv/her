@@ -1,9 +1,6 @@
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
-var audio = new Audio('somewhere.mp3');
-audio.loop = true;
-audio.autoplay = true;
 $(function () {
 	$loveHeart = $("#loveHeart");
 	var a = $loveHeart.width() / 2;
@@ -19,7 +16,6 @@ $(function () {
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2 - 50, 10));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
-	document.body.appendChild(audio);
 	setInterval(function () {
 		garden.render()
 	}, Garden.options.growSpeed)
