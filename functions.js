@@ -19,6 +19,7 @@ $(function () {
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2 - 50, 10));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
+	document.body.appendChild(audio);
 	setInterval(function () {
 		garden.render()
 	}, Garden.options.growSpeed)
