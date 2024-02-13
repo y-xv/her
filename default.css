@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #fdc9d1;
     font-size: 12px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #mainDiv {
@@ -19,6 +19,7 @@ body {
   height: 100%;
   z-index: -1;
 }
+
 #loveHeart {
     float: left;
     width: 670px;
