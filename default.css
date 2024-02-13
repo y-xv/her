@@ -19,7 +19,14 @@ body {
   pointer-events: none; /* allow clicks to pass through the video */
   z-index: -1; /* ensure video is behind the content */
 }
-
+.corner-image {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px; 
+  width: 100px; 
+  height: auto; 
+  z-index: 2; 
+}
 #loveHeart {
     float: left;
     width: 670px;
