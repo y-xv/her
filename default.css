@@ -3,21 +3,21 @@ body {
     padding: 0;
     background: #fdc9d1;
     font-size: 12px;
-    overflow: auto
+    overflow: hidden;
 }
 
 #mainDiv {
     width: 100%;
     height: 100%
 }
+
 #background-video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* allow clicks to pass through the video */
-  z-index: -1; /* ensure video is behind the content */
+  z-index: -1;
 }
 #loveHeart {
     float: left;
