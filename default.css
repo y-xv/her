@@ -25,7 +25,7 @@ body {
   right: 10px; 
   width: 100px; 
   height: auto; 
-  z-index: 2; 
+  z-index: 3; 
 }
 #loveHeart {
     float: left;
